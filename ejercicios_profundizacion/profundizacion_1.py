@@ -1,3 +1,5 @@
+import random
+import numpy as np
 # Numpy [Python]
 # Ejercicios de profundización
 
@@ -28,9 +30,16 @@ que ya dispongamos de Python. El objetivo es:
     b) Si el número es mayor a 21 se debe informar al usuario que perdio
 '''
 
+
 if __name__ == '__main__':
     print('Comenzamos a divertirnos!')
     # A partir de aquí escriba el código que resuelve el enunciado
     # Leer el enunciado con atención y consultar cualquier duda
+    lista = np.array([random.randint(1,10) for x in range(3)])
+    suma = np.sum(lista)
+    if suma <= 21:
+        print('resultado ', suma, 'numeros obtenidos ', lista)
+    else:
+        print('Ha perdido, numeros obtenidos ', lista)    
 
     print("terminamos")
